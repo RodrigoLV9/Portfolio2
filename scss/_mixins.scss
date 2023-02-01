@@ -1,0 +1,49 @@
+@import "./variables.scss";
+@mixin flexbox(){
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    @content
+};
+@mixin links(){
+    text-decoration: none;
+    font-size: map-get($textSize , paragraph );
+    
+};
+@mixin gridLayout(){
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin contain-body(){
+    margin:25px;
+}
+@mixin input(){
+    border:none;
+    outline: none;
+}
+@mixin title_animation(){
+    display:block;
+    font-family:monospace;
+    white-space:nowrap;
+    border-right: 4px solid;
+    width:12ch;
+    animation: typing 2.5s steps(12), blink 1s infinite step-end alternate;
+    overflow: hidden;
+    animation-iteration-count:infinite;
+    animation-delay: 2s;
+
+}
+@keyframes typing{
+    from {width:0}
+}
+@keyframes blink{
+    50%{
+        border-color:transparent;
+    }
+}
+@mixin images(){
+    background-position: center;
+    background-size: cover;
+}

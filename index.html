@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Pagina Web</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <img src="imgs/list.svg" alt="logo de menu" class="logo-menu" id="logo-menu">
+    <header id="inicio">
+        <nav class="menu" id="menu">
+            <a class="menu__link" href="#inicio">Inicio</a>
+            <a class="menu__link" href="#portfolio">Portafolio</a>
+            <a class="menu__link" href="#form">Formulario</a>
+            <a class="menu__link" href="#contact">Contacto</a>
+        </nav>
+        <span class="title">Hola Mundo!</span>
+    </header>
+    <section class="biography">
+        <div class="biography__text">
+            <h2 class="biography__title"> < >  Rodrigo Villafuerte  < > </h2>
+            <p class="biography__p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident harum beatae repellat repudiandae, ea exercitationem sit fugit ullam. Mollitia id repellat ipsam officiis doloremque voluptatum tempora illo suscipit ut nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime exercitationem dolorum eos quisquam, impedit maiores officiis commodi ad nam unde quam consectetur, odit cum rem quo voluptas, perspiciatis atque! Voluptatum.</p>
+        </div>
+        <div class="biography__img"></div>
+    </section>
+    <h2 style="text-align: center; font-size: 30px; margin:50px 0 20px 0" id="portfolio">Portafolio</h2>
+    <section class="portfolio">
+        <div class="card">
+            <div class="card__img"></div>
+            <div class="card__info">
+                <p>Pagina web</p>
+                <p>tecnologias: JS, CSS y HTML</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__img"></div>
+            <div class="card__info">
+                <p>Pagina web</p>
+                <p>tecnologias: JS, CSS y HTML</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__img"></div>
+            <div class="card__info">
+                <p>Pagina web</p>
+                <p>tecnologias: JS, CSS y HTML</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__img"></div>
+            <div class="card__info">
+                <p>Pagina Web</p>
+                <p>tecnologias: JS, CSS y HTML</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__img"></div>
+            <div class="card__info">
+                <p>Pagina web</p>
+                <p>tecnologias: JS, CSS y HTML</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__img"></div>
+            <div class="card__info">
+                <p>Pagina web</p>
+                <p>tecnologias: JS, CSS y HTML</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__img"></div>
+            <div class="card__info">
+                <p>Pagina web</p>
+                <p>tecnologias: JS, CSS y HTML</p>
+            </div>
+        </div>
+    </section>
+    <h2 style="text-align: center; margin:70px 0 30px 0" id="form">Formulario</h2>
+    <form class="form" id="form">
+        <input type="text" class="form__input" id="input" id="name" autocomplete="off" required>
+        <label for="name" class="form__label">Nombre:</label>
+        <input type="text" class="form__input" id="last-name" autocomplete="off" required>
+        <label for="last-name" class="form__label">Apellido:</label>
+        <input type="email" class="form__input" autocomplete="off" required id="mail">
+        <label for="mail" class="form__label">Mail:</label>
+        <input type="password" class="form__input" autocomplete="off" required id="password">
+        <label for="password" class="form__label">Contraseña:</label>
+        <div class="validation">
+            <input type="checkbox" id="check" required>
+            <label for="check">He leido los terminos y condiciones</label>
+        </div>
+        <input type="submit" value="Suscribete" class="form__button" id="button">
+    </form>
+    <div class="chat" id="chat">
+        <div class="bot">
+            <div class="bot__name">BOT-2</div>
+            <div class="bot__delete" id="bot__delete" >X</div>
+        </div>
+        <div class="chat__text" id="chat_text"></div>
+        <div class="me">
+            <input class="me__input" id="input_chat"></input>
+            <input type="button" value=">>" class="send" id="button_chat">
+        </div>
+    </div>
+    <div class="bot-icon" id="bot-icon"></div>
+    <hr>
+    <footer id="contact">
+        <div class="logo-social">
+            <a class="logo-social__item" id="discord"></a>
+            <a class="logo-social__item" id="gmail"></a>
+            <a class="logo-social__item" id="instagram"></a>
+            <a class="logo-social__item" id="linkedin"></a>
+        </div>
+        <div class="foot">
+            <p class="foot__item">© Copyright 2023 RodrigoLV - Programador Web Freelance.</p>
+            <p class="foot__item">Diseño, Programación y Desarrollo Web Buenos Aires - Buenos Aires - Argentina.</p>
+            <p class="foot__item">Diseñado por RodrigoLV.</p>
+        </div>
+    </footer>
+    <div class="form-validated" id="form-validate">
+        <div class="form-validated__gif"></div>
+        <p>Se ha suscrito correctamente</p>
+    </div>
+
+    <script src="./public/main.js"></script>
+</body>
+</html>

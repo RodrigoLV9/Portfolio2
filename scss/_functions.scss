@@ -1,0 +1,3 @@
+@function ruta($nameImg){
+    @return url($router+$nameImg)
+}
